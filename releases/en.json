@@ -1,0 +1,301 @@
+{
+  "releases_notes": [
+    {
+      "version": "Version 5.3.2",
+      "date": "27 Dez 2016",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "Changed icon"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 5.3.1",
+      "date": "28 Nov 2016",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "Increased warning time to populate personal information"
+          ]
+        },
+        "Bug Fix",
+        {
+          "changes": [
+            "Browser Manual Lock correction"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 5.3",
+      "date": "03 Oct 2016",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "Updated version of PassBrow-Recover for 1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 5.2",
+      "date": "27 Mai 2016",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "Removed obfuscated code and minified code to meet Google's security policies"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 5.1",
+      "date": "22 Dez 2015",
+      "changes": [
+        "Bug Fix",
+        {
+          "changes": [
+            "Correction at the opening of the browser, not open lock tab, only modal password"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 5.0",
+      "date": "29 Nov 2015",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "New look with Bootstrap + jQuery"
+          ]
+        },
+        "New features",
+        {
+          "changes": [
+            "Add new form for personal information",
+            "Created recovery passwords (PassBrow-Recover) with versions for MacOS, Linux and Windows",
+            "Where is saved personal information or password, it creates a .passbrow file with encrypted information extension ",
+            "Option to view history of releases"
+          ]
+        },
+        "Bug Fix",
+        {
+          "changes": [
+            "Correction not to open a new tab Options when already open at any window"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 4.1",
+      "date": "13 Nov 2015",
+      "changes": [
+        "Bug Fix",
+        {
+          "changes": [
+            "Shortcut Correction (Rules Google Chrome changed)",
+            {
+              "changes": [
+                "Changed to CTRL + SHIFT + 9"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 4.0",
+      "date": "27 Set 2014",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "Changing the icon and the logo of the extension"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 3.2.7",
+      "date": "23 Jun 2014",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "Add line break in the notification buttons",
+            "Change size of the buttons"
+          ]
+        },
+        "Bug Fix",
+        {
+          "changes": [
+            "When you open more than one window, always ask for the password"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 3.2.6",
+      "date": "15 Jun 2014",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "Changed how to generate user id extension"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 3.2.5",
+      "date": "08 Jun 2014",
+      "changes": [
+        "New features",
+        {
+          "changes": [
+            "Add function to open the PassBrow-Authenticator automatically when reading the QR Code"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 3.2.4",
+      "date": "21 Mai 2014",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "New look",
+            "Overshadowed the code for more security"
+          ]
+        },
+        "Bug Fix",
+        {
+          "changes": [
+            "Fixed bug so that 'all' the windows are closed the wrong password"
+          ]
+        },
+        "New features",
+        {
+          "changes": [
+            "Alert for use in anonymously",
+            "Donation button via paypal",
+            "Add password to open the options",
+            "Created the option of using the PassBrow-Authenticator app to generate a unique password for browser"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 2.0.8",
+      "date": "03 Jul 2013",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "Proofreading"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 2.0.7",
+      "date": "03 Jul 2013",
+      "changes": [
+        "New features",
+        {
+          "changes": [
+            "Option self-lock (in seconds)",
+            "Lock using shortcut key"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 1.3.3",
+      "date": "31 Out 2012",
+      "changes": [
+        "New features",
+        {
+          "changes": [
+            "Option to block the context menu (right mouse button)"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 1.3.2",
+      "date": "22 Out 2012",
+      "changes": [
+        "Improvements",
+        {
+          "changes": [
+            "Changing the logo Popup"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 1.3.1",
+      "date": "07 Out 2012",
+      "changes": [
+        "Modificação do Popup",
+        {
+          "changes": [
+            "Removed the registration form password",
+            "Added Options button, Lock and Cancel"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 1.2",
+      "date": "01 Set 2012",
+      "changes": [
+        "New languages",
+        {
+          "changes": [
+            "German",
+            "Spanish",
+            "French",
+            "Italian",
+            "Russian"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 1.2.2",
+      "date": "31 Ago 2012",
+      "changes": [
+        "Changed Title of the extension"
+      ]
+    },
+    {
+      "version": "Version 1.1",
+      "date": "28 Ago 2012",
+      "changes": [
+        "Added minimum version of Chrome for extension of use",
+        {
+          "changes": [
+            "Minimum Version: 4"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Version 1.0",
+      "date": "21 Ago 2012",
+      "changes": [
+        "First version of the extension"
+      ]
+    }
+  ]
+}

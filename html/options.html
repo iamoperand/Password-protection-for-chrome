@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <title></title>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/options.js"></script>
+    <script type="text/javascript" src="../js/idle.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/md5.js"></script>
+    <script type="text/javascript" src="../js/codeGenerate.js"></script>
+    <script type="text/javascript" src="../js/aes.js"></script>
+    <script type="text/javascript" src="../js/AesUtil.js"></script>
+    <script type="text/javascript" src="../js/pbkdf2.js"></script>
+    <script type="text/javascript" src="../js/notify.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/spin.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/passBrow.css"/>
+</head>
+<body class="options">
+
+<!--Navbar Top-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#menu-passbrow" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="logo-passbrow" href="#">
+                <img class="img-responsive" src="../images/logo_options.png" alt="PassBrow"/>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu-passbrow">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#options_info" id="menu_info_personal">
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li><a href="#options_password" id="menu_new_password"></a></li>
+                <li><a href="#options_block" id="menu_configs"></a></li>
+                <li><a href="#options_authenticator" id="menu_passbrow_authenticador"></a></li>
+                <li><a href="#options_recover" id="menu_passbrow_recover"></a></li>
+                <li><a id="menu_releases"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--PassBrow Container-->
+<div class="container-passbrow container">
+    <div class="panel panel-default scroll-menu">
+        <div class="panel-heading">
+            <h3 class="panel-title bookmark" id="options_info"></h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label id="lbl_last_name" class="col-sm-3 control-label"></label>
+
+                        <div class="col-sm-9">
+                            <input class="form-control" type="text" name="last_name" id="last_name"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="lbl_email" class="col-sm-3 control-label"></label>
+
+                        <div class="col-sm-9">
+                            <input class="form-control" type="text" name="email" id="email"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="lbl_secret_question" class="col-sm-3 control-label"></label>
+
+                        <div class="col-sm-9">
+                            <select id="secret_question" class="form-control select-passbrow">
+                                <option hidden selected value="" id="secret_question_default"></option>
+                                <option hidden value="********">********</option>
+                                <option value="color" id="secret_question_color"/>
+                                <option value="singer" id="secret_question_singer"/>
+                                <option value="friend" id="secret_question_friend"/>
+                                <option value="teacher" id="secret_question_teacher"/>
+                                <option value="dog" id="secret_question_dog"/>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="lbl_secret_answer" class="col-sm-3 control-label"></label>
+
+                        <div class="col-sm-9">
+                            <input class="form-control" type="text" name="secret_answer" id="secret_answer"/>
+                        </div>
+                    </div>
+                    <hr/>
+                    <button class="btn btn-primary pull-right" id="submit_personal_information" type="button"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default scroll-menu">
+        <div class="panel-heading">
+            <h3 class="panel-title bookmark" id="options_password"></h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label id="lbl_pass" class="col-sm-3 control-label"></label>
+
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="pass" maxlength="16"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="lbl_passConfirm" class="col-sm-3 control-label"></label>
+
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="passConfirm" maxlength="16"/>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="pull-right">
+                        <button class="btn btn-danger padding-default" id="deletePass" type="button"></button>
+                        <button class="btn btn-primary" id="submit_newPass" type="button"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default scroll-menu">
+        <div class="panel-heading">
+            <h3 class="panel-title bookmark" id="options_block"></h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="col-lg-offset-1">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label id="lbl_autoBlock">
+                                    <input type="checkbox" id="chk_autoBlock"/>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group padding-default">
+                            <div class="input-group">
+                                <input class="form-control text-center" type="number" id="autoBlockCount" min="15"
+                                       max="999999" disabled="disabled"
+                                       aria-describedby="lbl_autoBlock_sec"/>
+                                <span class="input-group-addon" id="lbl_autoBlock_sec"></span>
+                            </div>
+                        </div>
+                        <p>
+                        <div class="checkbox">
+                            <label id="lbl_shortcut">
+                                <input type="checkbox" id="chk_shortcut"/>
+                            </label>
+
+                            <p><em class="h6 text-danger tip" id="tip_shortcut_ps"></em></p>
+                        </div>
+                        </p>
+                    </form>
+                </div>
+                <hr/>
+                <button class="btn btn-primary pull-right" id="submit_right"></button>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default scroll-menu">
+        <div class="panel-heading">
+            <h3 class="panel-title bookmark" id="options_authenticator"></h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group padding-default text-center">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label id="lbl_authenticator_chk">
+                            <input type="checkbox" id="chk_authenticator">
+                        </label>
+
+                        <p><em class="h6 text-danger tip" id="tip_authenticator"></em></p>
+                    </div>
+                    <div class="form-group" id="div_hash">
+                        <input class="form-control text-hash" type="text" name="codeHash"
+                               id="codeHash" readonly="readonly"/>
+                        <span id="QR_code_hash_span"/><!--QR-code-->
+                    </div>
+                    <div class="form-group">
+                        <em><h5 id="lbl_authenticator_download_tip"></h5></em>
+                        <h5 id="lbl_authenticator_download"></h5>
+                    </div>
+                </form>
+                <div class="container pull-center scroll-menu">
+                    <a href="http://goo.gl/2BLgOl" target="_blank">
+                        <img id="title_img_download_authenticator" class="img-responsive"
+                             src="../images/passBrow_authenticator.png"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title bookmark" id="options_recover"></h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group separator">
+                <form class="form-horizontal">
+                    <table align="center" width="100%">
+                        <tr>
+                            <td align="center" colspan="4">
+                                <div class="form-group">
+                                    <img src="../images/passbrow_recover.png"/>
+                                </div>
+                                <div class="form-group pull-center">
+                                    <p><em><span id="info_passbrow_recover" class="text-center tip"></span></em></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="4">
+                                <button class="btn btn-success" id="btn_save_file_information" type="button"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="4">
+                                <hr/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="4">
+                                <p><em><span id="info_download_apps" class="text-center tip"></span></em></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <img class="img-responsive" src="../images/macos.png"/>
+                            </td>
+                            <td align="center" colspan="2">
+                                <img class="img-responsive" src="../images/linux.png"/>
+                            </td>
+                            <td align="center">
+                                <img class="img-responsive" src="../images/windows.png"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <button class="btn btn-primary" id="btn_download_macosx" type="button"></button>
+                            </td>
+                            <td align="center" colspan="2">
+                                <button class="btn btn-primary" id="btn_download_linux" type="button"></button>
+                            </td>
+                            <td align="center">
+                                <button class="btn btn-primary" id="btn_download_windows" type="button"></button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Navbar Bottom-->
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="navbar-form navbar-left navbar-bottom-passbrow-left">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post"
+              target="_blank">
+            <div class="form-group">
+                <label id="lbl_donative"/>
+            </div>
+            <input type="hidden" name="cmd" value="_s-xclick"/>
+            <input type="hidden" name="hosted_button_id" value="EHLHQ8V66BTPE"/>
+            <input class="center-vertical" type="image" src="../images/paypal.png" name="submit" id="submit_paypal"/>
+        </form>
+    </div>
+    <div class="navbar-bottom-passbrow-center">
+        <a href="mailto:passbrow.extension@gmail.com">
+            <span id="signature_options"></span>
+        </a>
+    </div>
+    <div class="navbar-bottom-passbrow-right">
+        <button class="btn btn-danger" id="btn_exit" type="button"></button>
+    </div>
+</nav>
+
+<!-- Modal Releases -->
+<div class="modal fade" id="modal_releases" tabindex="-1" role="dialog" aria-labelledby="lbl_title_modal_releases">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="lbl_title_modal_releases"></h4>
+            </div>
+            <div class="modal-body modal-releases">
+                <div class="panel-body" id="releases_notes"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn_ok" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Confirm -->
+<div class="modal fade" id="modal_confirm" tabindex="-1" role="dialog" aria-labelledby="lbl_title_modal">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="lbl_title_modal">PassBrow</h4>
+            </div>
+            <div class="modal-body">
+                <span id="lbl_modal_confirm_body" class="text-center"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn_no" data-dismiss="modal"></button>
+                <button id="modal_confirm_btn_yes" type="button" class="btn btn-primary btn_yes"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Saving File Information -->
+<div id="modal_saving_file_information" class="modal fade" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-passbrow">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <em><h4 id="lbl_saving_file_information"></h4></em>
+            </div>
+            <div class="modal-body">
+                <div class="spinner-modal">
+                    <span id="saving_spinner_center"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Login -->
+<div class="modal fade" id="modal_login" tabindex="-1" role="dialog" aria-labelledby="lbl_title_modal_login">
+    <div class="modal-dialog modal-passbrow" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="lbl_title_modal_login"></h4>
+            </div>
+            <div class="modal-body login-modal pull-center">
+                <div class="form-group">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label id="lbl_password_modal_login" class="col-sm-3 control-label"></label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="password_modal_login" maxlength="16"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn_cancel" data-dismiss="modal"></button>
+                <button id="modal_password_btn_ok" type="button" class="btn btn-success btn_ok"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Login Change Options -->
+<div class="modal fade" id="modal_login_options" tabindex="-1" role="dialog" aria-labelledby="lbl_title_modal_login_options"
+     data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-passbrow" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="lbl_title_modal_login_options"></h4>
+            </div>
+            <div class="modal-body login-modal pull-center">
+                <div class="form-group">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label id="lbl_password_modal_login_options" class="col-sm-3 control-label"></label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="password_modal_login_options" maxlength="16"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="modal_password_options_btn_cancel" type="button" class="btn btn-default btn_cancel"></button>
+                <button id="modal_password_options_btn_ok" type="button" class="btn btn-success btn_ok"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

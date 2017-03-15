@@ -1,0 +1,301 @@
+{
+  "releases_notes": [
+    {
+      "version": "Versão 5.3.2",
+      "date": "27 Dez 2016",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Alterado ícone"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 5.3.1",
+      "date": "28 Nov 2016",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Aumentado o tempo de aviso para preencher informações pessoais"
+          ]
+        },
+        "Correção de Bugs",
+        {
+          "changes": [
+            "Correção do bloqueio manual do navegador"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 5.3",
+      "date": "03 Out 2016",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Atualizado Versão do PassBrow-Recover para 1.1"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 5.2",
+      "date": "27 Mai 2016",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Removido código ofuscado e código minificado para atender as políticas de segurança do Google"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 5.1",
+      "date": "22 Dez 2015",
+      "changes": [
+        "Correção de Bugs",
+        {
+          "changes": [
+            "Correção na abertura do navegador, não abrir aba de bloqueio, somente modal de senha"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 5.0",
+      "date": "29 Nov 2015",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Novo visual com Bootstrap + jQuery"
+          ]
+        },
+        "Novas funcionalidades",
+        {
+          "changes": [
+            "Adicionado novo formulário para informações pessoais",
+            "Criado recuperador de senhas (PassBrow-Recover) com versões para MacOS, Linux e Windows",
+            "Sempre que é salvo informações pessoais ou a senha, é criado um arquivo .passbrow com informações criptografadas da extensão",
+            "Opção de visualizar histórico das releases"
+          ]
+        },
+        "Correção de Bugs",
+        {
+          "changes": [
+            "Correção para não abrir uma nova aba de Opções quando já existir alguma aberta, em qualquer janela"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 4.1",
+      "date": "13 Nov 2015",
+      "changes": [
+        "Correção de bugs",
+        {
+          "changes": [
+            "Correção do atalho (As regras do Google Chrome mudou)",
+            {
+              "changes": [
+                "Alterado para CTRL + SHIFT + 9"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 4.0",
+      "date": "27 Set 2014",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Alterado o ícone e o logo da extensão"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 3.2.7",
+      "date": "23 Jun 2014",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Adicionado quebra de linha nos botões da notificação",
+            "Alterado tamanho dos botões"
+          ]
+        },
+        "Correção de bugs",
+        {
+          "changes": [
+            "Quando for aberta mais de uma janela, sempre pedir a senha"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 3.2.6",
+      "date": "15 Jun 2014",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Alterado a forma de gerar id do usuário da extensão"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 3.2.5",
+      "date": "08 Jun 2014",
+      "changes": [
+        "Novas funcionalidades",
+        {
+          "changes": [
+            "Adicionada função para abrir o PassBrow-Authenticator automaticamente quando ler o QR Code"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 3.2.4",
+      "date": "21 Mai 2014",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Novo visual",
+            "Ofuscado o código para mais segurança"
+          ]
+        },
+        "Correção de bugs",
+        {
+          "changes": [
+            "Corrigido bug para que 'todas' as janelas sejam fechadas ao errar a senha"
+          ]
+        },
+        "Novas Funcionalidades",
+        {
+          "changes": [
+            "Alerta para o uso em modo anônimo",
+            "Botão de doação através do paypal",
+            "Adicionado senha para abrir as opções",
+            "Criado a opção de usar o app PassBrow-Authenticator para gerar uma senha única por navegador"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 2.0.8",
+      "date": "03 Jul 2013",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Correção de textos"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 2.0.7",
+      "date": "03 Jul 2013",
+      "changes": [
+        "Novas funcionalidades",
+        {
+          "changes": [
+            "Opção auto-bloquear (em segundos)",
+            "Bloquear usando tecla de atalho"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 1.3.3",
+      "date": "31 Out 2012",
+      "changes": [
+        "Novas funcionalidades",
+        {
+          "changes": [
+            "Opção de bloquear no menu de contexto (botão direito do mouse)"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 1.3.2",
+      "date": "22 Out 2012",
+      "changes": [
+        "Melhorias",
+        {
+          "changes": [
+            "Alterado logo do Popup"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 1.3.1",
+      "date": "07 Out 2012",
+      "changes": [
+        "Modificação do Popup",
+        {
+          "changes": [
+            "Removido o formulário de cadastro de senha",
+            "Adicionado Botão Opções, Bloquear e Cancelar "
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 1.2",
+      "date": "01 Set 2012",
+      "changes": [
+        "Novos idiomas",
+        {
+          "changes": [
+            "Alemão",
+            "Espanhol",
+            "Francês",
+            "Italiano",
+            "Russo"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 1.2.2",
+      "date": "31 Ago 2012",
+      "changes": [
+        "Alterado Título da extensão"
+      ]
+    },
+    {
+      "version": "Versão 1.1",
+      "date": "28 Ago 2012",
+      "changes": [
+        "Adicionado versão mínima do Chrome para uso da extensão",
+        {
+          "changes": [
+            "Versão Mínima: 4"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "Versão 1.0",
+      "date": "21 Ago 2012",
+      "changes": [
+        "Primeira versão da extensão"
+      ]
+    }
+  ]
+}

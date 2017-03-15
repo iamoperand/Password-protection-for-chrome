@@ -1,0 +1,36 @@
+{
+   "background": {
+      "scripts": [ "js/codeGenerate.js", "js/md5.js", "js/login.js", "js/idle.js", "js/start.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/icon_48.png",
+      "default_popup": "html/popup.html",
+      "default_title": "Options"
+   },
+   "commands": {
+      "block_browser": {
+         "description": "Block browser",
+         "suggested_key": {
+            "default": "Ctrl+Shift+9",
+            "mac": "Command+Shift+9"
+         }
+      }
+   },
+   "default_locale": "en",
+   "description": "Protection with password for Chrome.",
+   "icons": {
+      "128": "images/icon_128.png",
+      "16": "images/icon_16.png",
+      "48": "images/icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCmWwoTb3kpJYBFB5ZtiSCR6CSLTXVVOTZgCa+f8iD/QLpuMfYv/9SRsn23wW0/upPxJjxxczxncSg1q9/qpJzYEj2wMjLEMKI5gDz3kkdphy7tAm9Q5fjDGnhkgpoeLTvuOZigLI4p2sbXrlcuMIWjc/4sX5lUAL6fsd6AiwknxQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "4",
+   "name": "PassBrow - Password for Chrome",
+   "options_page": "html/options.html",
+   "permissions": [ "tabs", "notifications", "contextMenus", "idle" ],
+   "short_name": "PassBrow",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.3.2",
+   "web_accessible_resources": [ "images/icon_48.png" ]
+}

@@ -1,0 +1,241 @@
+{
+   "btn_block_i18n": {
+      "message": "Bloquer"
+   },
+   "btn_cancel_i18n": {
+      "message": "Annuler"
+   },
+   "btn_confirm_i18n": {
+      "message": "Confirmer"
+   },
+   "btn_delete_i18n": {
+      "message": "Effacer passe"
+   },
+   "btn_download_i18n": {
+      "message": "Télécharger"
+   },
+   "btn_edit_i18n": {
+      "message": "Modifier"
+   },
+   "btn_exit_i18n": {
+      "message": "Quittez."
+   },
+   "btn_no_i18n": {
+      "message": "Non"
+   },
+   "btn_ok_i18n": {
+      "message": "OK"
+   },
+   "btn_options_i18n": {
+      "message": "Options"
+   },
+   "btn_save_file_information_i18n": {
+      "message": "Création du fichier de l'information"
+   },
+   "btn_save_i18n": {
+      "message": "Enregistrer"
+   },
+   "btn_yes_i18n": {
+      "message": "Oui"
+   },
+   "confirm_saveOpAlt_i18n": {
+      "message": "Confirme changements?"
+   },
+   "context_block_i18n": {
+      "message": "Bloquer navigateur"
+   },
+   "del_pass_success_i18n": {
+      "message": "Mot de passe supprimé avec succès!"
+   },
+   "enterPass_again": {
+      "message": "S'il vous plaît entrer le mot de passe enregistré!"
+   },
+   "enter_password_i18n": {
+      "message": "Mot de passe"
+   },
+   "exit_question_i18n": {
+      "message": "Votre fenêtre se ferme et les options ne sont pas sauvegardées seront perdues.\n\n Etes-vous sûr de vouloir quitter?"
+   },
+   "hint_input_hash_authenticator_i18n": {
+      "message": "La souris dessus pour voir le code..."
+   },
+   "info_download_apps_18n": {
+      "message": "Tous les installateurs est livré avec Java 1.8 inclus."
+   },
+   "info_passbrow_recover_i18n": {
+      "message": "Pour votre sécurité, créer le fichier d'informations et télécharger PassBrow PassBrow-Recover application pour votre bureau, donc si vous avez oublié votre mot de passe."
+   },
+   "lbl_authenticator_chk_i18n": {
+      "message": "Utiliser le générateur de code PassBrow-Authenticator (PBA) pour l'authentification de votre navigateur"
+   },
+   "lbl_authenticator_download_i18n": {
+      "message": "Pour utiliser PassBrow-Authenticator vous devez télécharger l'application sur Google Play site. Click sur l'image pour lancer l'installation."
+   },
+   "lbl_autoBlock_i18n": {
+      "message": "Auto-verrouiller après "
+   },
+   "lbl_autoBlock_sec_i18n": {
+      "message": " secondes."
+   },
+   "lbl_donative_i18n": {
+      "message": "Apporter votre contribution:"
+   },
+   "lbl_email_i18n": {
+      "message": "E-mail:"
+   },
+   "lbl_last_name_i18n": {
+      "message": "Nom de famille:"
+   },
+   "lbl_password_confirm_i18n": {
+      "message": "Confirmer mot de passe:"
+   },
+   "lbl_password_i18n": {
+      "message": "Mot de passe:"
+   },
+   "lbl_saving_file_information_i18n": {
+      "message": "Créer les informations du fichier..."
+   },
+   "lbl_secret_answer_i18n": {
+      "message": "Réponse secrète:"
+   },
+   "lbl_secret_question_i18n": {
+      "message": "Question secrète:"
+   },
+   "lbl_shortcut_i18n": {
+      "message": "Utilisez les touches de raccourci (Ctrl+Shift+9 - Linux/Windows, Command+Shift+9 - MacOS)."
+   },
+   "leg_passBrow_i18n": {
+      "message": "PassBrow - La protection de votre navigateur"
+   },
+   "legend_newPass_i18n": {
+      "message": "Nouveau mot de passe"
+   },
+   "legend_options_authenticator_i18n": {
+      "message": "PassBrow-Authenticator"
+   },
+   "legend_options_right_i18n": {
+      "message": "Options Supplémentaires"
+   },
+   "legend_passbrow_recover_i18n": {
+      "message": "PassBrow-Recover"
+   },
+   "legend_personal_information_i18n": {
+      "message": "Informations personnelles"
+   },
+   "legend_releases_i18n": {
+      "message": "Versions"
+   },
+   "msg_allow_incognito_i18n": {
+      "message": "Pour votre navigateur est complètement sûr, cochez l'option 'Autoriser en mode navigation privée' pour PassBrow d'extension dans la fenêtre ci-dessous!"
+   },
+   "msg_need_new_pass_i18n": {
+      "message": "Signer un nouveau mot de passe!"
+   },
+   "notification_hash_button_01_title_i18n": {
+      "message": "Si le changement a été effectué ou que \nvous n'avez pas utiliser PBA, Cliquez Ici!"
+   },
+   "notification_hash_button_02_title_i18n": {
+      "message": "Pour ouvrir des options, Cliquez ici!"
+   },
+   "notification_hash_msg_i18n": {
+      "message": "l'utilisation de PassBrow-Authenticator(PBA) a été désactivé, s'il vous plaît activer à nouveau et entrez le nouveau code de la PBA."
+   },
+   "notification_hash_title_i18n": {
+      "message": "ATTENTION - Améliorez votre code dans PassBrow-Authenticator"
+   },
+   "notification_personal_info_msg_i18n": {
+      "message": "Remplissez vos renseignements personnels pour récupérer votre mot de passe si vous perdez."
+   },
+   "notification_personal_info_title_i18n": {
+      "message": "PassBrow-Recover"
+   },
+   "notification_update_msg_i18n": {
+      "message": "Extension PassBrow a été mis à jour à la version $s\n\nChangements dans Options -> Versions",
+      "placeholders": {
+         "version": {
+            "content": "$1"
+         }
+      }
+   },
+   "notification_update_title_i18n": {
+      "message": "PassBrow Mise à jour"
+   },
+   "pass_different_i18n": {
+      "message": "Mot de passe ne correspondent pas!"
+   },
+   "pass_different_save_i18n": {
+      "message": "Les mots de passe doivent être identiques!"
+   },
+   "pass_invalid_i18n": {
+      "message": "Passe permettent seulement: az 0-9."
+   },
+   "pass_not_found_close": {
+      "message": "Les mots de passe ne correspondent pas, votre navigateur sera fermé!"
+   },
+   "pass_saved_i18n": {
+      "message": "Mot de passe sauvegardé avec succès!"
+   },
+   "pass_size_i18n": {
+      "message": "Le mot de passe compris entre 3 et 16 caractères."
+   },
+   "saveOpAlt_sucess_i18n": {
+      "message": "Paramètres sauvegardés avec succès!"
+   },
+   "saved_file_success_i18n": {
+      "message": "Fichier enregistrée avec succès!"
+   },
+   "secret_question_color_i18n": {
+      "message": "Quelle est votre couleur préférée?"
+   },
+   "secret_question_dog_i18n": {
+      "message": "Quel est le nom de votre chien préféré?"
+   },
+   "secret_question_friend_i18n": {
+      "message": "Quel est votre meilleur ami d'enfance?"
+   },
+   "secret_question_singer_i18n": {
+      "message": "Quelle est votre chanson préférée?"
+   },
+   "secret_question_teacher_i18n": {
+      "message": "Quelle est votre professeur préféré?"
+   },
+   "signature_options_i18n": {
+      "message": "Laisson R. Silveira - Droits d'auteur 2012-2016 - PassBrow "
+   },
+   "signature_popup_i18n": {
+      "message": "Laisson R. Silveira \u003Cp>Droits d'auteur 2012-2016 - PassBrow "
+   },
+   "subTitle_i18n": {
+      "message": "Options d'"
+   },
+   "tip_authenticator_i18n": {
+      "message": "Pour vous connecter, inscrivez votre navigateur dans l'application PassBrow-Authenticator en entrant ce code dans la PBA"
+   },
+   "tip_email_i18n": {
+      "message": "S'il vous plaît saisir une adresse e-mail valide"
+   },
+   "tip_last_name_i18n": {
+      "message": "S'il vous plaît entrer votre nom de famille"
+   },
+   "tip_required_field_i18n": {
+      "message": "Champs obligatoires"
+   },
+   "tip_secret_answer_i18n": {
+      "message": "S'il vous plaît entrez votre réponse secrète"
+   },
+   "tip_secret_question_i18n": {
+      "message": "Choisissez une question"
+   },
+   "tip_shortcut_ps_i18n": {
+      "message": "Cette option fonction depuis le Google Chrome 25"
+   },
+   "title_img_download_authenticator_i18n": {
+      "message": "Télécharger PassBrow-Authenticator"
+   },
+   "title_modal_delete_i18n": {
+      "message": "Supprimer mot de passe?"
+   },
+   "title_options_i18n": {
+      "message": "Créer un nouveau mot de passe"
+   }
+}
